@@ -3,9 +3,12 @@
 <head>
 <style>
 div {
+  margin-top: 3cm;"
   width: 100px;
 }
+
 *{ 
+  position: sticky;
 margin-left: auto;
 margin-right: auto;
 text-align:center
@@ -16,6 +19,7 @@ text-align:center
 </head>
 <body>
 
+<div style="z-index: 1;">
 <h1> Matrizomat</h1>
 <table>
 	<tbody>
@@ -30,10 +34,12 @@ text-align:center
 	</tbody>
 </table>
 
-<button style="margin-bottom: 3cm;" onclick="myFunction()"  >Anwenden</button> 
+<button style="margin-bottom: 3cm; z-index: 5;" onclick="myFunction()"  >Anwenden</button> 
+</div>
 
-<div style="left: 50%;" id="bild">
-  <img src="a.jpg"  style="width: 100px">
+
+<div style="left: 50%;z-index: -1; " id="bild">
+  <img src="a.jpg"  style="width: 200px">
 </div>
 
 <script>
