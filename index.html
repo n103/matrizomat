@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  padding-top: 3cm;
+  width: 100px;
+}
+*{ 
+margin-left: auto;
+margin-right: auto;
+text-align:center
+}
+
+
+</style>
+</head>
+<body>
+
+<h1> Matrizomat</h1>
+<table>
+	<tbody>
+		<tr>
+			<td> <input id="11" type="number"></td>
+			<td> <input id="12" type="number"></td>
+		</tr>
+		<tr>
+			<td> <input id="21" type="number"></td>
+			<td> <input id="22" type="number"></td>
+		</tr>
+	</tbody>
+</table>
+
+<button onclick="myFunction()"  >Anwenden</button> 
+
+<div style="left: 50%;" id="bild">
+  <img src="a.jpg"  style="width: 100px">
+</div>
+
+<script>
+  // https://stackoverflow.com/questions/54169955/trying-to-apply-css-transform-in-javascript
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix
+
+  const bild = document.getElementById("bild");
+
+  function myFunction() {
+    alert("test")
+
+    i11 = document.getElementById("11").value;
+    i12 = document.getElementById("12").value;
+    i21 = document.getElementById("21").value;
+    i22 = document.getElementById("22").value;
+
+    bild.style.transform = "matrix(" + i11  + "," + i21 + "," + i12 + "," + i22 + ",0,0)";
+  }
+
+  </script>
+
+
+</body>
+</html>
