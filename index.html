@@ -3,7 +3,6 @@
 <head>
 <style>
 div {
-  padding-top: 3cm;
   width: 100px;
 }
 *{ 
@@ -31,7 +30,7 @@ text-align:center
 	</tbody>
 </table>
 
-<button onclick="myFunction()"  >Anwenden</button> 
+<button style="margin-bottom: 3cm;" onclick="myFunction()"  >Anwenden</button> 
 
 <div style="left: 50%;" id="bild">
   <img src="a.jpg"  style="width: 100px">
@@ -44,6 +43,7 @@ text-align:center
   const bild = document.getElementById("bild");
 
   function myFunction() {
+
     i11 = document.getElementById("11").value;
     i12 = document.getElementById("12").value;
     i21 = document.getElementById("21").value;
@@ -57,3 +57,5 @@ text-align:center
 
 </body>
 </html>
+
+
